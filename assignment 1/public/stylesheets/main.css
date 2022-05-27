@@ -18,7 +18,9 @@ h1{
 
 .parent h2 {
   margin:0;
-  padding: 0;
+  padding-top: 10px;
+  color: rgb(166,40,36);
+  font-size: 19px;
 }
 
 .parent {
@@ -27,9 +29,10 @@ h1{
 }
 
 .lowerBound {
-
   flex:.8;
   background-color: rgb(234, 239, 241);
+  border: 1px rgb(213, 224, 229) solid;
+  border-radius: 5px;
   padding-left: .5cm;
   padding-right: .5cm;
   padding-top: 0;
@@ -64,20 +67,35 @@ h1{
 
 .histogram {
   background-color: rgb(234, 239, 241);
+  border: 1px rgb(213, 224, 229) solid;
+  border-radius: 5px;
   margin-left: .5cm;
   padding-left: .5cm;
   width: 95.3%;
   height:65%
 }
 
-
-
 .gradeBox {
-  width: 95.3%;
   background-color: rgb(234, 239, 241);
+  border: 1px rgb(213, 224, 229) solid;
+  border-radius: 5px;
   margin-left: .5cm;
   padding-left: .5cm;
+  width: 95.3%;
   height: 31.8%;
   
 }
 
+.gradeBox input {
+  height: .9cm;
+  width: 4cm;
+}
+
+.innerList { 
+  padding-left: .5cm;
+  line-height: 14px;
+}
+
+.innerList b {
+  font-weight: normal;
+}
