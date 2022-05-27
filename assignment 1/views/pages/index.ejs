@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("../partials/header.ejs") %>
+  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histogram Generator</title>
+</head>
+<header> 
+  <h1>Histogram Generator</h1>
+</header>
+<body>
+<div class="parent"> 
+  <div class="lowerBound">
+    <h2>Lower Bounds</h2>
+    <div class="innerBox">
+      <label for="Max">Max</label>
+      <input type="text" id="Max" name="Max">
+      <br><br>
+      <label for="a+">A+</label>
+      <input type="text" id="a+" name="a+">
+      <br><br>
+      <label for="a">A</label>
+      <input type="text" id="a" name="a">
+      <br><br>
+      <label for="a-">A-</label>
+      <input type="text" id="a-" name="a-">
+      <br><br>
+      <label for="b+">B+</label>
+      <input type="text" id="b+" name="b+">
+      <br><br>
+      <label for="b">B</label>
+      <input type="text" id="b" name="b">
+      <br><br>
+      <label for="b-">B-</label>
+      <input type="text" id="b-" name="b-">
+      <br><br>
+      <label for="c+">C+</label>
+      <input type="text" id="c+" name="c+">
+      <br><br>
+      <label for="c">C</label>
+      <input type="text" id="c" name="c">
+      <br><br>
+      <label for="c-">C-</label>
+      <input type="text" id="c-" name="c-">
+      <br><br>
+      <label for="d">D</label>
+      <input type="text" id="d" name="d">
+      <br><br>
+      <label for="f">F</label>
+      <input type="text" id="f" name="f">
+    </div>
+  </div>
+  <div class = "wrapperRight">
+    <div class="histogram">
+      <h2>Historgram</h2>
+      <div class="innerList"> 
+        <br><br>
+        <b id = "a+List">A+</b>
+        <br><br>
+        <b id = "aList">A</b>
+        <br><br>
+        <b id = "a-List">A-</b>
+        <br><br>
+        <b id = "b+List">B+</b>
+        <br><br>
+        <b id = "bList">B</b>
+        <br><br>
+        <b id = "b-List">B-</b>
+        <br><br>
+        <b id = "c+List">C+</b>
+        <br><br>
+        <b id = "cList">C</b>
+        <br><br>
+        <b id = "c-List">C-</b>
+        <br><br>
+        <b id = "dList">D</b>
+        <br><br>
+        <b id = "fList">F</b>
+        <br>
+      </div>
+    </div>
+    <br style="clear:both"/>
+    <div class="gradeBox">
+      <br>
+      <label for="gradeField">New Grade: </label>
+      <input type="text" id="gradeField" name="gradeField">
+    </div>
+  </div>
+</div>
+</body>
+</html>

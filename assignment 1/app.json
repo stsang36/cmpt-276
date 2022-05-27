@@ -1,0 +1,8 @@
+{
+  "name": "Assignment 1",
+  "description": "A simple page where you can enter grades",
+  "repository": "tobeEntered",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/main/public/node.svg",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
