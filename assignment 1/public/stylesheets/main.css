@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Cambria';
+  src: url('/fonts/Cambria.ttf') format('truetype');
+}
 
 html, body {
   margin: 0;
@@ -11,7 +15,6 @@ div {
 }
 
 h1{
-
   font-family: sans-serif;
   font-weight: normal;
 }
@@ -26,6 +29,11 @@ h1{
 .parent {
   display:flex;
   width: 20cm;
+  font: normal 100% Cambria, Georgia,"Times New Roman", Times, serif;
+}
+
+.parent Input {
+  font: normal 100% Cambria, Georgia,"Times New Roman", Times, serif;
 }
 
 .lowerBound {
@@ -107,4 +115,5 @@ h1{
   padding-top: 28px;
   float:right;
   width: 60%;
+  word-wrap: break-word;
 }

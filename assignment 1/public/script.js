@@ -39,7 +39,7 @@ function aGradeChange(id) {
             aInput.value = parseFloat(dict[id]).toFixed(2);
         } else {
             console.log("you enetered " + myNumber);
-            myNumber = parseFloat(myNumber).toFixed(2);
+            myNumber = parseFloat(myNumber);
             switch(id) {
                 case 'Max':
                     if (myNumber <= dict['a-plus']) {
@@ -51,6 +51,8 @@ function aGradeChange(id) {
                 case 'a-plus':
                     if (myNumber <= dict['a'] || myNumber >= dict['Max']) {
                         alert("A+ cannot be less than A or greater than Max!");
+                        console.log(dict['a'] + " is not less than " + myNumber);
+                        console.log(typeof(dict['a']), typeof(myNumber));
                     }
                     else {
                         dict['a-plus'] = myNumber;
@@ -59,6 +61,7 @@ function aGradeChange(id) {
                 case 'a':
                     if (myNumber <= dict['a-minus'] || myNumber >= dict['a-plus']) {
                         alert("A cannot be less than A- or greater than A+!");
+                        console.log(dict['a-'] + " is not less than " + myNumber);
                     }
                     else {
                         dict['a'] = myNumber;
@@ -131,7 +134,10 @@ function aGradeChange(id) {
                 case 'f':
                     if (myNumber >= dict['d']) {
                         alert("F cannot be greater than D!");
+                    } else {
+                        dict['f'] = myNumber;
                     }
+                    break;
                 default:
                     alert("Error! Invalid ID!");
                     break;
@@ -177,7 +183,7 @@ function refreshValues() {
                 document.getElementById('fList').innerHTML += "O";
             }
         } else {
-            alert("Error! Invalid grade found in grades list! Ignoring...");
+            console.log("Error! Invalid grade found in grades list! Ignoring...");
             console.log("Ignoring grade: " + element);
         }
 
@@ -190,7 +196,7 @@ document.getElementById("gradeField").onchange = (e) => {
     if (isNaN(myNumber) || myNumber < 0 || myNumber > 100 || myNumber === '') {
         alert("Please enter a valid number!");
     } else {
-        myNumber = parseFloat(myNumber).toFixed(2);
+        myNumber = parseFloat(myNumber);
         grades.push(myNumber);
         refreshValues();
     }
