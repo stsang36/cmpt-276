@@ -1,5 +1,4 @@
 # Assignment 1 Grade Calculator
-
 This lets you set and keep track of grades.
 
 ```sh
