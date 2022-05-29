@@ -121,7 +121,7 @@ function aGradeChange(id) {
                     }
                     break;
                 case 'd':
-                    if (myNumber => dict['c-minus'] || myNumber <= dict['f']) {
+                    if (myNumber >= dict['c-minus'] || myNumber <= dict['f']) {
                         alert("D cannot be greater than C- or less than F!");
                     }
                     else {
