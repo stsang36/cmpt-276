@@ -24,6 +24,7 @@ h1{
   padding-top: 10px;
   color: rgb(166,40,36);
   font-size: 19px;
+  font-family: serif;
 }
 
 .parent {
@@ -34,6 +35,10 @@ h1{
 
 .parent Input {
   font: normal 100% Cambria, Georgia,"Times New Roman", Times, serif;
+  text-align: right;
+  padding-right: 15px;
+  padding-left: 15px;
+  
 }
 
 .lowerBound {
@@ -56,7 +61,7 @@ h1{
 
 .lowerBound input {
   float:right;
-  margin-right: 43%;
+  margin-right: 40%;
   width: 1.5cm;
   height: .7cm;
 }
@@ -96,6 +101,7 @@ h1{
 .gradeBox input {
   height: .9cm;
   width: 4cm;
+
 }
 
 .innerList { 
