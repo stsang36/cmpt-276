@@ -14,5 +14,6 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
+  .get('/histogram', (req, res) => res.render('pages/histogram'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
 

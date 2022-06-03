@@ -1,5 +1,6 @@
 # Assignment 1 Grade Calculator
-This lets you set and keep track of grades.
+This lets you set and keep track of grades. 
+To access this calculator go to [localhost:5000/histogram](http://localhost:5000/histogram).
 
 ```sh
 $ git clone https://github.com/stsang36/cmpt-276.git # or clone your own fork
